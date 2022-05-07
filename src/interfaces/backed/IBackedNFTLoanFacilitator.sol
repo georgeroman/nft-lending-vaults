@@ -20,6 +20,8 @@ interface IBackedNFTLoanFacilitator {
 
     function totalOwed(uint256 loanId) external view returns (uint256);
 
+    function originationFeeRate() external view returns (uint256);
+
     function createLoan(
         uint256 collateralTokenId,
         address collateralContractAddress,
